@@ -1,0 +1,232 @@
+:root {
+  --cor0: #624533;
+  --cor0v: #62453393;
+  --cor1: #9f7c56;
+  --cor2: #d4b390;
+  --cor3: #d1cec9;
+  --cor4: #d1cec9be;
+  --font0: 'Inter', sans-serif;
+  --font1: 'Montserrat', sans-serif;
+  --font_titulo: 'Source Code Pro', monospace;
+}
+
+body {
+  font-family: var(--font1);
+  background-color:var(--cor2);
+}
+
+main {
+  min-width: 320px;
+  max-width: 1400px;
+  margin: auto;
+}
+
+.cabecalho {
+  display: block;
+  width: auto;
+  height: 6em;
+  background-color: var(--cor3);
+}
+
+.logo-cabecalho {
+  margin: auto;
+  align-items: center;
+  display: block;
+  width: 8em;
+  height: 6em;
+  background-image: url(../img/logo.png);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.divisoria{
+  display: block;
+  width: auto;
+  height: 12px;
+  background: linear-gradient(180deg, var(--cor1) 0%, var(--cor2) 61.98%, var(--cor3) 100%);
+}
+
+.apresentacao{
+  background-image: url(../img/mundo1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-color: var(--cor0v);
+  background-blend-mode: color;
+  padding: 3em;
+  display: flex;
+  flex-direction: column;
+}
+
+.sobre-nos {
+  max-width: 50%;
+  position: static;
+  padding: 3em 4em;
+  background-color: var(--cor4);
+  border-radius: 0px 40px;
+  border: 0.2em solid var(--cor1);
+  text-align: justify;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.404);
+  margin: 1rem;
+}
+
+.rigth {
+ align-self: flex-end;
+}
+
+.titulo-sobre-nos {
+  font-family: var(--font_titulo);
+  padding-bottom: 2.5rem;
+  font-size: 3rem;
+  font-weight: 200;
+}
+
+.texto-sobre-nos {
+  text-indent: 2rem;
+  line-height: 1.5rem;
+  font-size: 1rem;
+}
+
+.sobre-nos p {
+  margin-bottom: 2rem;
+}
+
+.servicos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 5em;
+  text-align: center;
+  background-color: var(--cor3);
+  padding-bottom: 5em;
+}
+
+.servicos-titulo {
+  padding-bottom: 1em;
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 3rem;
+  text-decoration: underline;
+}
+
+.cards {
+ display: flex;
+ max-width: 800px;
+ height: auto;
+ justify-content: center;
+ align-items: center;
+}
+
+.servicos-card {
+  display: flex;
+  background-color: var(--cor1);
+  width: 300px;
+  height: 300px;
+  margin: 1rem;
+  border-radius: 20px 0px;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.527);
+  min-width: 200px;
+  padding: 4rem 3rem; 
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.5s ease;
+} 
+
+.servicos-card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  font-weight: bold;
+  align-self: initial;
+}
+
+.servicos-card p {
+  font-size: 1.1rem;
+  justify-self: center;
+}
+
+.servicos-card:hover {
+  transform: scale(1.05);
+ } 
+
+.rodape {
+  width: auto;
+  height: 200px;
+  background-color: var(--cor0);
+}
+
+@media screen and (max-width: 1300px) {
+  
+  .cards {
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   grid-template-rows: 1fr 1fr;
+   grid-template-areas: "1"
+                        "2";
+  }
+  
+  .servicos-card {  
+    max-width: 250px;
+  }
+  
+  .texto-sobre-nos {
+    font-size: 1.2rem;
+  }
+
+  .servicos-card:nth-child(-n+2){
+    grid-area: 1;
+  }
+
+  .servicos-card:nth-last-child(-n+2){
+    grid-area: 2;
+  }
+  
+}
+
+@media screen and (max-width: 775px) {
+
+  .apresentacao{
+    padding: 0.01rem;
+  }
+
+  .sobre-nos {
+    max-width: 90%;
+    padding: 1em 1em;
+    margin: 1rem;
+  }
+
+  .cards {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-areas: "1"
+                         "2"
+                         "3"
+                         "4";
+    max-width: 800px;
+    height: auto;
+   }
+   
+  .servicos-card {
+    max-width: 250px;
+   }
+   
+  .servicos-card:nth-child(1){
+    grid-area: 1;
+  }
+
+  .servicos-card:nth-child(2){
+    grid-area: 2;
+  }
+
+  .servicos-card:nth-child(3){
+    grid-area: 3;
+  }
+ 
+   .servicos-card:nth-child(4){
+     grid-area: 4;
+   }
+
+}
