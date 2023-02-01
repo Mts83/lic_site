@@ -57,6 +57,7 @@ main {
   padding: 3em;
   display: flex;
   flex-direction: column;
+  width: auto;
 }
 
 .sobre-nos {
@@ -102,13 +103,13 @@ main {
   text-align: center;
   background-color: var(--cor3);
   padding-bottom: 5em;
+  width: auto;
 }
 
 .servicos-titulo {
   font-family: var(--font_titulo);
   padding-bottom: 1em;
   font-size: 3rem;
-  font-weight: bold;
   margin-bottom: 3rem;
 }
 
