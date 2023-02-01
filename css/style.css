@@ -105,11 +105,11 @@ main {
 }
 
 .servicos-titulo {
+  font-family: var(--font_titulo);
   padding-bottom: 1em;
   font-size: 3rem;
   font-weight: bold;
   margin-bottom: 3rem;
-  text-decoration: underline;
 }
 
 .cards {
