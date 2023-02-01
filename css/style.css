@@ -12,7 +12,7 @@
 
 body {
   font-family: var(--font1);
-  background-color:var(--cor1);
+  background-color:var(--cor0);
 }
 
 main {
@@ -156,7 +156,7 @@ main {
 .rodape {
   width: auto;
   height: 200px;
-  background-color: var(--cor0);
+  background-color: var(--cor3);
 }
 
 @media screen and (max-width: 1300px) {
