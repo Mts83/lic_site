@@ -52,7 +52,7 @@ main {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  background-color: var(--cor0v);
+  background-color: var(--cor1);
   background-blend-mode: color;
   padding: 3em;
   display: flex;
