@@ -154,11 +154,68 @@ main {
  } 
 
 .rodape {
+  display: flex;
   width: auto;
   height: 200px;
-  background-color: black;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--cor3);
+  flex-direction: column;
 }
 
+.logo-icons {
+  border-right: 2px solid var(--cor0);
+}
+
+.card-rodape {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo {
+  background-image: url(../img/logo.png);
+  width: 11em;
+  height: 6em;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding-right: 2em;
+}
+
+.info {
+  padding-left: 1.2em;
+  color: var(--cor0);
+  font-family: var(--font1);
+  font-size: 0.9em;
+  width: 50%;
+}
+
+.icons {
+  display: flex;
+  align-self: center;
+  justify-content: end;
+  width: auto;
+  margin: 0.5rem 2rem;
+
+}
+
+.icon {
+  justify-self: end;
+  padding: 0rem 0.5rem;
+  
+}
+
+.icon:first-child {
+  padding-left: 0;
+}
+
+.copy {
+  font-size: 0.7rem;
+  color: var(--cor0);
+  font-family: var(--font1);
+  margin-top: 2em;
+}
 @media screen and (max-width: 1300px) {
   
   .cards {
@@ -231,4 +288,20 @@ main {
      grid-area: 4;
    }
 
+}
+
+@media screen and (max-width: 563px) {
+
+  .card-rodape {
+    transform: scale(0.8);
+    margin-bottom: 0;
+    height: 280px;
+  }
+  .copy {
+    font-size: 0.5em;
+    padding-top: 0;
+    margin-top: 0;
+    margin-bottom: 5px;
+  }
+  
 }
