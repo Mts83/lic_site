@@ -17,14 +17,14 @@ body {
 
 main {
   min-width: 320px;
-  max-width: 1400px;
+  max-width: 1900px;
   margin: auto;
 }
 
 .cabecalho {
   display: block;
   width: auto;
-  height: 6em;
+  height: 9em;
   background-color: var(--cor3);
 }
 
@@ -32,8 +32,8 @@ main {
   margin: auto;
   align-items: center;
   display: block;
-  width: 8em;
-  height: 6em;
+  width: 11em;
+  height: 9em;
   background-image: url(../img/logo.png);
   background-size: contain;
   background-position: center;
@@ -156,7 +156,7 @@ main {
 .rodape {
   width: auto;
   height: 200px;
-  background-color: var(--cor3);
+  background-color: black;
 }
 
 @media screen and (max-width: 1300px) {
