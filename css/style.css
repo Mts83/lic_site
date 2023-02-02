@@ -68,7 +68,7 @@ main {
   border-radius: 0px 40px;
   border: 0.2em solid var(--cor1);
   text-align: justify;
-  word-break: break-all;
+  word-spacing: -0.1em;
   box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.404);
   margin: 1rem;
 }
